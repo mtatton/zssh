@@ -57,7 +57,7 @@
 #define HAVE_GRANTPT 1
 
 /* Define if you have the isastream function.  */
-#define HAVE_ISASTREAM 1
+//#define HAVE_ISASTREAM 1
 
 /* Define if you have the openpty function.  */
 /* #undef HAVE_OPENPTY */
@@ -87,7 +87,7 @@
 #define HAVE_READLINE_READLINE_H 1
 
 /* Define if you have the <stropts.h> header file.  */
-#define HAVE_STROPTS_H 1
+//#define HAVE_STROPTS_H 1
 
 /* Define if you have the <sys/cdefs.h> header file.  */
 #define HAVE_SYS_CDEFS_H 1

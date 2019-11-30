@@ -40,7 +40,7 @@
 #include "long-options.h"
 #include "xstrtoul.h"
 #include "error.h"
-#undef strstr
+
 #ifndef STRICT_PROTOTYPES
 extern time_t time();
 extern char *strerror();
