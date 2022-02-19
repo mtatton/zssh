@@ -71,7 +71,7 @@ $(NAME) : $(EXTRA_DEPS) version.h ${OBJS}
 	$(CC) -o $(NAME) $(LDFLAGS) $(OBJS) $(LIBS)
 
 ztelnet : $(NAME)
-	@-rm $@ > /dev/null 2>&1
+	rm -f $@
 	ln $(NAME) $@
 
 install :
@@ -81,8 +81,8 @@ install :
 	$(INSTALL) -m 0644 $(MANS) ${prefix}/man/man1
 
 uninstall :
-	-cd ${exec_prefix}/bin      && rm $(PRGS)
-	-cd ${prefix}/man/man1 && rm $(MANS)
+	-cd ${exec_prefix}/bin      && rm -f $(PRGS)
+	-cd ${prefix}/man/man1 && rm -f $(MANS)
 
 fake_readline : force
 	-cd fake_readline && $(MAKE)
