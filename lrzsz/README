@@ -1,3 +1,18 @@
+lrzsz [ version 0.12.20 ]
+
+COMPILE:
+
+> ./configure
+> ./build.sh
+
+INSTALL:
+
+> cd src
+> strip lrz lsz
+> sudo cp lrz /usr/local/bin/rz
+> sudo cp lsz /usr/local/bin/sz
+
+
 lrzsz is a X/Y/ZModem package built from the public-domain version of
 Chuck Forsberg´s rzsz package. This package contains NO code from later
 releases of rzsz which would preclude it from being released under the
