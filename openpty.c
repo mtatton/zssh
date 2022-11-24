@@ -10,6 +10,10 @@
 
 #include "zssh.h"
 
+// 20221123 EASIER COMPILATION
+#undef HAVE_STROPTS_H
+#undef HAVE_ISASTREAM
+
 #define GL_SLAVENAMELEN	50
 static char	gl_slavename[GL_SLAVENAMELEN + 1] = {0};
 

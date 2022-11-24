@@ -38,6 +38,8 @@
 #  define R_OK 4
 #endif
 
+#undef HAVE_MMAP
+
 #if defined(HAVE_SYS_MMAN_H) && defined(HAVE_MMAP)
 #  include <sys/mman.h>
 size_t mm_size;
